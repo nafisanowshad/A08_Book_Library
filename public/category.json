@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Science"
+  },
+  {
+    "id": 2,
+    "name": "Poetry"
+  },
+  {
+    "id": 3,
+    "name": "Tech"
+  },
+  {
+    "id": 4,
+    "name": "Story"
+  },
+  {
+    "id": 5,
+    "name": "Mystery"
+  },
+  {
+    "id": 6,
+    "name": "Poetry"
+  },
+  {
+    "id": 7,
+    "name": "Tech"
+  },
+  {
+    "id": 8,
+    "name": "Philosophy"
+  },
+  {
+    "id": 9,
+    "name": "History"
+  },
+  {
+    "id": 10,
+    "name": "Biography"
+  },
+  {
+    "id": 11,
+    "name": "Story"
+  },
+  {
+    "id": 12,
+    "name": "History"
+  }
+]
