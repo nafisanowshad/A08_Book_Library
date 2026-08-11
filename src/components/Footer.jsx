@@ -1,139 +1,148 @@
-import Link from "next/link";
-import Image from "next/image";
+import Image from 'next/image';
+import React from 'react';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaBookOpen } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="relative mt-24">
-      <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
-
-      {/* Background Layer */}
-      <div className="absolute inset-0 -z-10 bg-white dark:bg-[#0a0a0b]" />
-
-      {/* Subtle Gradient Glow */}
-      <div
-        className="absolute inset-0 -z-10 bg-linear-to-tr 
-        from-purple-500/5 via-transparent to-blue-500/5 
-        dark:from-purple-500/10 dark:to-blue-500/10 blur-3xl"
-      />
-
-      {/* Content */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        {/* Top Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          {/* Brand */}
+    <footer className=" bg-gray-50 text-slate-600 border-t border-slate-200 pt-16 pb-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+          
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1">
               <Image
-                src="/logo.png"
-                alt="pixgen logo"
-                width={32}
-                height={32}
-                className="dark:brightness-200"
-              />
-              <h2 className="text-xl font-semibold tracking-tight text-black dark:text-white">
+                          src={"/logo.png"}
+                          alt="logo"
+                          loading="eager"
+                          width={32}
+                          height={32}
+                          className="object-cover h-auto w-auto"
+                        />
+              <span className="text-2xl font-black text-slate-900 tracking-wide">
                 BookVibe
-              </h2>
+              </span>
             </div>
-
-            <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 max-w-xs">
-             Users can explore a vast collection of books, filter by categories, and borrow titles digitally.
+            
+            <p className="text-xs text-slate-600 leading-relaxed max-w-sm">
+              Empowering readers across Bangladesh with a smart, simple online book borrowing platform.
             </p>
+
+            <div className="pt-2">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500 block mb-3">
+                Follow Us
+              </span>
+              <div className="flex items-center gap-3">
+                <a href="#" className="w-9 h-9 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:text-pink-600 hover:border-pink-500 hover:shadow-sm transition-all">
+                  <FaFacebookF className="text-sm" />
+                </a>
+                <a href="#" className="w-9 h-9 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:text-pink-600 hover:border-pink-500 hover:shadow-sm transition-all">
+                  <FaInstagram className="text-sm" />
+                </a>
+                <a href="#" className="w-9 h-9 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:text-pink-600 hover:border-pink-500 hover:shadow-sm transition-all">
+                  <FaLinkedinIn className="text-sm" />
+                </a>
+                <a href="#" className="w-9 h-9 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:text-pink-600 hover:border-pink-500 hover:shadow-sm transition-all">
+                  <FaGithub className="text-sm" />
+                </a>
+              </div>
+            </div>
           </div>
 
-          {/* Product */}
           <div>
-            <h3 className="text-sm font-semibold text-black dark:text-white mb-4">
-              Book
+            <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 border-b border-pink-500/30 pb-1 inline-block">
+              Contact
             </h3>
-            <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-black dark:hover:text-white transition"
-                >
-                  Details
-                </Link>
+            <ul className="space-y-3.5 text-xs text-slate-600">
+              <li className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-pink-600 shrink-0 shadow-sm">
+                  <FaEnvelope />
+                </div>
+                <span>support@bookvibe.com</span>
               </li>
-              <li>
-                <Link
-                  href="/all-books"
-                  className="hover:text-black dark:hover:text-white transition"
-                >
-                  All Books
-                </Link>
+              <li className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-pink-600 shrink-0 shadow-sm">
+                  <FaPhoneAlt />
+                </div>
+                <span>+880 1827-802961</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-pink-600 shrink-0 shadow-sm">
+                  <FaMapMarkerAlt />
+                </div>
+                <span>Dhanmondi, Dhaka, Bangladesh</span>
               </li>
             </ul>
           </div>
 
-          {/* Company */}
           <div>
-            <h3 className="text-sm font-semibold text-black dark:text-white mb-4">
-              About
+            <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 border-b border-pink-500/30 pb-1 inline-block">
+              Product
             </h3>
-            <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
+            <ul className="space-y-2.5 text-xs text-slate-600">
               <li>
-                <Link
-                  href="/contact"
-                  className="hover:text-black dark:hover:text-white transition"
-                >
-                  Contact Us
-                </Link>
+                <a href="#" className="hover:text-pink-600 transition-colors flex items-center gap-1.5">
+                  <span className="text-pink-500">•</span> All Books
+                </a>
               </li>
               <li>
-                <Link
-                  href="/terms"
-                  className="hover:text-black dark:hover:text-white transition"
-                >
-                  Terms
-                </Link>
+                <a href="#" className="hover:text-pink-600 transition-colors flex items-center gap-1.5">
+                  <span className="text-pink-500">•</span> Borrow Requests
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-pink-600 transition-colors flex items-center gap-1.5">
+                  <span className="text-pink-500">•</span> My Reading List
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-pink-600 transition-colors flex items-center gap-1.5">
+                  <span className="text-pink-500">•</span> Active Membership
+                </a>
               </li>
             </ul>
           </div>
 
-          {/* CTA Block */}
-          <div className="space-y-4">
-            <h3 className="text-sm font-semibold text-black dark:text-white">
-              Start reading
+          <div>
+            <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 border-b border-pink-500/30 pb-1 inline-block">
+              Support
             </h3>
+            <ul className="space-y-2.5 text-xs text-slate-600">
+              <li>
+                <a href="#" className="hover:text-pink-600 transition-colors flex items-center gap-1.5">
+                  <span className="text-pink-500">•</span> Help Center
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-pink-600 transition-colors flex items-center gap-1.5">
+                  <span className="text-pink-500">•</span> Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-pink-600 transition-colors flex items-center gap-1.5">
+                  <span className="text-pink-500">•</span> Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-pink-600 transition-colors flex items-center gap-1.5">
+                  <span className="text-pink-500">•</span> Terms of Service
+                </a>
+              </li>
+            </ul>
+          </div>
 
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Read your first book today.
-            </p>
+        </div>
 
-            <Link
-              href="/signup"
-              className="inline-flex items-center justify-center px-5 py-2.5 rounded-full 
-              bg-black text-white dark:bg-white dark:text-black 
-              text-sm font-medium transition-all duration-200 
-              hover:scale-[1.02] hover:shadow-lg hover:shadow-black/10 dark:hover:shadow-white/10"
-            >
-              Get Started
-            </Link>
+        <div className="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+          <p>© 2026 BookVibe. All rights reserved.</p>
+          <div className="flex items-center gap-4">
+            <a href="#" className="hover:text-slate-700 transition-colors">Terms</a>
+            <span>|</span>
+            <a href="#" className="hover:text-slate-700 transition-colors">Privacy</a>
+            <span>|</span>
+            <a href="#" className="hover:text-slate-700 transition-colors">Cookies</a>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
-
-        {/* Bottom */}
-        <div className="mt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
-          <p>© {new Date().getFullYear()} bookvibe. All rights reserved.</p>
-
-          <div className="flex items-center gap-6">
-            <Link
-              href="/privacy"
-              className="hover:text-black dark:hover:text-white transition"
-            >
-              Privacy
-            </Link>
-            <Link
-              href="/terms"
-              className="hover:text-black dark:hover:text-white transition"
-            >
-              Terms
-            </Link>
-          </div>
-        </div>
       </div>
     </footer>
   );
