@@ -3,7 +3,7 @@ import BookCard from "@/components/BookCard";
 const AllBooksPage = async() => {
     const res=await fetch('https://a08-book-library.vercel.app/data.json')
     const books=await res.json()
-    console.log(books)
+    // console.log(books)
     return (
         <div className="mb-15">
             <h1 className="text-2xl font-bold mx-8 my-6">All Books</h1>
