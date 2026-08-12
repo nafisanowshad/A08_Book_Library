@@ -29,6 +29,7 @@ export default function SignUpPage() {
         password,
         image,
     })
+    
     console.log({data, error});
   };
 
