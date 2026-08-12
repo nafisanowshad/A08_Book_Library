@@ -34,7 +34,7 @@ const BenefitsAndMembership = () => {
               {lowStockBooks.map((book, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between bg-slate-200/90 border border-slate-200/60 rounded-2xl p-4 transition-all duration-300 hover:border-pink-700/40"
+                  className="flex items-center justify-between bg-slate-200/90 border border-slate-200/60 rounded-2xl p-4 transition-all duration-300 hover:border-pink-700/40 hover:scale-105 hover:shadow-xl hover:shadow-pink-100/50 hover:opacity-95 active:scale-95"
                 >
                   <div>
                     <h3 className="text-sm md:text-base font-bold text-slate-700">
@@ -67,7 +67,7 @@ const BenefitsAndMembership = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
       
-              <div className="bg-slate-900/90 border border-slate-700/60 rounded-2xl p-5 flex flex-col justify-between">
+              <div className="bg-slate-900/90 border border-slate-700/60 rounded-2xl p-5 flex flex-col justify-between transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-gray-500/50 hover:opacity-95 active:scale-95">
                 <div>
                   <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
                     Reader Basic
@@ -83,7 +83,7 @@ const BenefitsAndMembership = () => {
                 </div>
               </div>
 
-              <div className="relative bg-slate-900/90 border-2 border-pink-500 rounded-2xl p-5 flex flex-col justify-between shadow-lg shadow-pink-500/10">
+              <div className="relative bg-slate-900/90 border-2 border-pink-500 rounded-2xl p-5 flex flex-col justify-between shadow-lg shadow-pink-500/10 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-pink-500/50 hover:opacity-95 active:scale-95">
                 <span className="absolute -top-3 left-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
                   Most Chosen
                 </span>
@@ -103,7 +103,7 @@ const BenefitsAndMembership = () => {
               </div>
             </div>
 
-            <div className="bg-slate-900/60 border border-slate-700/40 rounded-2xl p-4 mb-8">
+            <div className="bg-slate-900/60 border border-slate-700/40 rounded-2xl p-4 mb-8 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-gray-500/50 hover:opacity-95 active:scale-95">
               <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-3">
                 Included Benefits
               </span>
@@ -117,10 +117,10 @@ const BenefitsAndMembership = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <button className="w-full py-3 px-4 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500 hover:opacity-95 transition-opacity shadow-lg shadow-pink-500/20">
+            <button className="w-full py-3 px-4 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500 shadow-lg shadow-pink-500/20 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-pink-500/50 hover:opacity-95 active:scale-95">
               Activate Membership
             </button>
-            <button className="w-full py-3 px-4 rounded-xl font-bold text-sm text-pink-400 bg-slate-900 border border-pink-500/40 hover:bg-slate-800 transition-colors">
+            <button className="w-full py-3 px-4 rounded-xl font-bold text-sm text-pink-400 bg-slate-900 border border-pink-500/40 hover:bg-slate-800 transition-colors duration-300 hover:scale-105 hover:shadow-xl hover:shadow-pink-500/50 hover:opacity-95 active:scale-95">
               Browse Member Picks
             </button>
           </div>
